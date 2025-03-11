@@ -10,16 +10,16 @@ const currentYear = new Date().getFullYear();
 const currentMonth = new Date().getMonth();
 const daysInCurrentMonth = getDaysInMonth(currentYear, currentMonth);
 
-const itemData =;
+const itemData = [];
 
 for (let day = 1; day <= daysInCurrentMonth; day++) {
-  const items =;
-  const numItems = Math.floor(Math.random() * 3) + 1; // Generate 1 to 3 items per day
+  const items = [];
+  const numItems = Math.floor(Math.random() * 3) + 1;
 
   for (let i = 0; i < numItems; i++) {
     items.push({
       name: `Item ${i + 1} for Day ${day}`,
-      points: Math.floor(Math.random() * 500) + 100, // Random points between 100 and 600
+      points: Math.floor(Math.random() * 500) + 100,
     });
   }
 
