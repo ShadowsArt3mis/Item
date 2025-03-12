@@ -10,10 +10,10 @@ const currentYear = new Date().getFullYear();
 const currentMonth = new Date().getMonth();
 const daysInCurrentMonth = getDaysInMonth(currentYear, currentMonth);
 
-const itemData =[];
+let itemData;
 
 for (let day = 1; day <= daysInCurrentMonth; day++) {
-  const items =[];
+  let items;
   const numItems = Math.floor(Math.random() * 3) + 1;
 
   for (let i = 0; i < numItems; i++) {
